@@ -1,0 +1,79 @@
+name: home_-_particles
+timestamp: 1670826874
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.png'
+  name: home_-_particles
+  timestamp: 1668167959
+positions: {  }
+sections:
+  navigation: Navigation
+  intro: Intro
+  features: Features
+  utility: Utility
+  above: Above
+  testimonials: Testimonials
+  expanded: Expanded
+  header: Header
+  mainbar: Mainbar
+  sidebar: Sidebar
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  messages:
+    system-messages-8283: 'System Messages'
+  logo:
+    logo-7093: 'Logo / Image'
+    logo-7964: 'Logo / Image'
+  menu:
+    menu-9290: Menu
+    menu-5922: Menu
+  social:
+    social-7355: Social
+  owlcarousel:
+    owlcarousel-2455: 'Owl Carousel'
+  accordian:
+    accordian-1463: 'Custom Accordian'
+  article:
+    article-5484: 'Custom Article'
+  backgroundVideo:
+    backgroundVideo-4497: 'Custom Video Background'
+  slider:
+    slider-8035: 'Custom Slider'
+  customCheckbox:
+    customCheckbox-3092: 'Custom Checkbox'
+  customCard:
+    customCard-1329: 'Custom Card'
+  contentcubes:
+    contentcubes-8680: 'Content Cubess'
+    contentcubes-7850: 'Content Cubes'
+  custom:
+    custom-3119: Features
+    custom-7088: 'Custom HTML'
+    custom-7658: 'Customer Testimonials'
+    custom-6355: 'Develop CMS themes quickly'
+  contenttabs:
+    contenttabs-3854: 'Content Tabs'
+  copyright:
+    copyright-7294: Copyright
+  horizontalmenu:
+    horizontalmenu-3157: 'Horizontal Menu'
+  totop:
+    totop-8510: 'To Top'
+  mobile-menu:
+    mobile-menu-6492: Mobile-menu
+inherit:
+  default:
+    navigation: navigation
+    system-messages-8283: system-messages-7972
+    logo-7093: logo-9608
+    menu-9290: menu-6409
+    social-7355: social-3171
+    menu-5922: menu-3747
+    footer: footer
+    logo-7964: logo-9571
+    copyright-7294: copyright-1736
+    horizontalmenu-3157: horizontalmenu-9034
+    totop-8510: totop-8670
+    offcanvas: offcanvas
+    mobile-menu-6492: mobile-menu-5697

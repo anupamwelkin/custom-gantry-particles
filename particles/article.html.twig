@@ -1,0 +1,28 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+{% if particle.title %}<h2 class="g-title custom" >{{ particle.title|raw }}</h2>{% endif %}
+<div class="container">
+ {% for item in particle.items %}
+    <section class="article-section {{ particle.css.class|e }}">
+      <div class="article-component">
+     
+        <div class="article__img">
+          <img src="{{item.imageSelection}}" class="image" alt="" />
+        </div>
+        <div class="article__content">
+          <h2 class="article__title">
+           {{item.title}}-{{id}}-{{ loop.index }}
+          </h2>
+          <p class="article__desc">
+           {{item.description}}-{{id}}-{{ loop.index }}
+          </p>
+            <a href="{{item.link}}"><button class="btn">{{item.btnTxt}}</button></a>
+        </div>
+      </div>
+    
+    </section>
+  {% endfor %}
+  </div>
+
+{% endblock %}

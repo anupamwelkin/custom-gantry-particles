@@ -1,0 +1,84 @@
+version: 2
+preset:
+  image: 'gantry-media://images/admin/layouts/3-col-right.png'
+  name: example2
+  timestamp: 1670649221
+layout:
+  /header/:
+    -
+      - menu-7160
+  /container-main/:
+    -
+      -
+        'main 60':
+          -
+            - position-breadcrumbs
+          -
+            - system-messages-6917
+          -
+            - system-content-9154
+      -
+        'sidebar1 20':
+          -
+            - social-5876
+          -
+            - position-sidebar
+          -
+            - position-right
+      -
+        'sidebar2 20':
+          -
+            - social-8937
+          -
+            - position-sidebar2
+          -
+            - position-right2
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-9695 40'
+      - 'spacer-1962 30'
+      - 'branding-6597 30'
+  offcanvas:
+    -
+      - mobile-menu-8537
+structure:
+  header:
+    attributes:
+      boxed: ''
+  sidebar1:
+    subtype: aside
+    type: section
+    block:
+      fixed: 1
+  sidebar2:
+    subtype: aside
+    type: section
+    block:
+      fixed: 1
+  container-main:
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  position-sidebar:
+    attributes:
+      key: sidebar
+  position-right:
+    attributes:
+      key: right
+  position-sidebar2:
+    attributes:
+      key: sidebar2
+  position-right2:
+    attributes:
+      key: right2
+  position-footer:
+    attributes:
+      key: footer

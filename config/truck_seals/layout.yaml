@@ -1,0 +1,60 @@
+version: 2
+preset:
+  image: 'gantry-admin://images/layouts/default.jpg'
+  name: example1
+  timestamp: 1670579497
+layout:
+  /header/:
+    -
+      - menu-2841
+  /main/:
+    -
+      - position-breadcrumbs
+    -
+      - system-messages-2056
+    -
+      - custom-1299
+    -
+      - system-content-3249
+  /mainbottom/:
+    -
+      - customCard-2260
+  /footer/:
+    -
+      - position-footer
+    -
+      - 'copyright-2601 40'
+      - 'spacer-4742 30'
+      - 'branding-1899 30'
+  offcanvas:
+    -
+      - mobile-menu-1546
+structure:
+  header:
+    attributes:
+      boxed: ''
+  main:
+    attributes:
+      boxed: ''
+  mainbottom:
+    type: section
+    attributes:
+      boxed: ''
+  footer:
+    attributes:
+      boxed: ''
+content:
+  position-breadcrumbs:
+    attributes:
+      key: breadcrumbs
+  custom-1299:
+    title: 'Custom HTML'
+  customCard-2260:
+    title: 'Custom Card'
+    attributes:
+      title: 'This is a card '
+      image: 'gantry-media://default.jpg'
+      description: 'This is a dummy text for this you have to checkk the layout preset tags'
+  position-footer:
+    attributes:
+      key: footer

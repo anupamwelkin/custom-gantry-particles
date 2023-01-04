@@ -1,0 +1,62 @@
+name: Custom Slider Using API  
+description: Custom slider.
+type: particle
+icon: fa-table
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable Content Tabs particle.
+      default: true
+
+    class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.
+
+    title:
+      type: input.text
+      label: Select the title of your slide show
+      description: Customize the section title text.
+      placeholder: Enter title
+    
+    apiLink:
+      type: input.text
+      label: Enter the api link
+      description: (Your api must contain ".url" as a key value pair)
+      placeholder: Enter api link here
+    
+    timer:
+      type: input.text
+      label: Enter the timer (1000->1second)
+      description: Customize the timer for your slideshow.
+      placeholder: Enter timer
+      
+    # items:
+    #   type: collection.list
+    #   array: true
+    #   label: Content Tabs Items
+    #   description: Content Tabs item to display.
+    #   value: title
+    #   ajax: true
+
+    #   fields:
+    #     .title:
+    #       type: input.text
+    #       label: Title for image
+    #       description: Enter the title
+    #     .imageSelection:
+    #       type: input.imagepicker
+    #       label: Image
+    #       description: Select the main image.
+    #     .content:
+    #       type: textarea.textarea
+    #       label: Description for image
+    #       description: Customize the tab content.
+    #       placeholder: Enter your custom content here.

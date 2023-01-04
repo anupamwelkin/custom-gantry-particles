@@ -1,0 +1,45 @@
+name: Custom Accordian
+description: Click the accordions below to expand/collapse the accordion content
+type: particle
+
+form:
+  fields:
+    enabled:
+      type: input.text
+      label: Enabled
+      description: Globally enable to the particles.
+      default: true
+
+    class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.
+
+    title:
+      type: input.text
+      label: Select the title of your slide show
+      description: Customize the section title text.
+      placeholder: Enter title
+    target:
+      type: input.fonts
+      label: Font
+      description: Select the font you would like to have used for content in the Particle.
+      default: family=Inconsolata:700,400&subset=latin,latin-ext
+    items:
+      type: collection.list
+      array: true
+      label: Content Tabs Items
+      description: Content Tabs item to display.
+      value: title
+      ajax: true
+
+      fields:
+        .button:
+          type: input.text
+          label: Enter the title
+          description: Write the title
+
+        .txt:
+          type: textarea.textarea
+          label: Enter the Description
+          description: for description

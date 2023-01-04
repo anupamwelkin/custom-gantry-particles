@@ -1,0 +1,48 @@
+version: 2
+
+preset:
+  image: gantry-media://images/admin/layouts/3-col-right.png
+
+layout:
+  /header/:
+    -
+      - menu
+
+  /container-main/:
+    -
+      - main 60:
+        - position-breadcrumbs
+        - system-messages
+        - system-content
+
+      - sidebar1 20:
+        - social-5876
+        - position-sidebar
+        - position-right
+
+      - sidebar2 20:
+        - social-8937
+        - position-sidebar2
+        - position-right2
+
+  /footer/:
+    -
+      - position-footer
+    -
+      - copyright 40
+      - spacer 30
+      - branding 30
+
+  offcanvas:
+    -
+      - mobile-menu
+
+structure:
+  sidebar1:
+    subtype: aside
+    block:
+      fixed: 1
+  sidebar2:
+    subtype: aside
+    block:
+      fixed: 1

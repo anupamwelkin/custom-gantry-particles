@@ -1,0 +1,12 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+    {% set foods = particle.food|split(',') %}
+
+    <h2>{{ particle.title }}</h2>
+    <ul>
+        {% for food in foods %}
+        <li>{{ food }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

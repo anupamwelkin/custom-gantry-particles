@@ -1,0 +1,39 @@
+name: custom
+timestamp: 1671101429
+version: 7
+preset:
+  image: 'gantry-admin://images/layouts/default.jpg'
+  name: example1
+  timestamp: 1670579497
+positions:
+  breadcrumbs: Breadcrumbs
+  footer: Footer
+sections:
+  header: Header
+  main: Main
+  mainbottom: Mainbottom
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-2841: Menu
+  position:
+    position-breadcrumbs: Breadcrumbs
+    position-footer: Footer
+  messages:
+    system-messages-2056: 'System Messages'
+  custom:
+    custom-1299: 'Custom HTML'
+  content:
+    system-content-3249: 'Page Content'
+  customCard:
+    customCard-2260: 'Custom Card'
+  copyright:
+    copyright-2601: Copyright
+  spacer:
+    spacer-4742: Spacer
+  branding:
+    branding-1899: Branding
+  mobile-menu:
+    mobile-menu-1546: Mobile-menu
+inherit: {  }

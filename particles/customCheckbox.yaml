@@ -1,0 +1,20 @@
+name: Custom Checkbox
+description: Demonstration of Multicheckbox
+icon: fa-check-square-o
+
+form:
+  fields:
+
+    title:
+      type: input.text
+      label: Title
+      default: What's your favorite food?
+
+    food:
+      type: input.multicheckbox
+      label: Favorite Food
+      options:
+        pasta: Pasta
+        pizza: Pizza
+        gelato: Gelato
+        broccoli: Broccoli

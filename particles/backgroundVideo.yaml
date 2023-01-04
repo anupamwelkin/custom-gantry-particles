@@ -1,0 +1,38 @@
+name: Custom Video Background
+description: Display the video in the background.
+type: particle
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable the particle.
+      default: true
+
+    css.class:
+      type: input.text
+      label: CSS Classes
+      description: CSS class name for the particle.
+
+    title:
+      type: input.text
+      label: Title
+      description: Customize the title text.
+      placeholder: Enter title
+
+    link:
+      type: input.text
+      label: Video Link
+      description: Customize the heading for your video.
+      placeholder: Enter heading
+
+    description:
+      type: input.text
+      label: Description
+      description: Customize the description.
+      placeholder: Enter description

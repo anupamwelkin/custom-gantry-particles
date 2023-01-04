@@ -1,0 +1,47 @@
+name: siebar
+timestamp: 1670649241
+version: 7
+preset:
+  image: 'gantry-media://images/admin/layouts/3-col-right.png'
+  name: example2
+  timestamp: 1670649221
+positions:
+  breadcrumbs: Breadcrumbs
+  sidebar: Sidebar
+  right: Right
+  sidebar2: Sidebar2
+  right2: Right2
+  footer: Footer
+sections:
+  header: Header
+  main: Main
+  sidebar1: Sidebar1
+  sidebar2: Sidebar2
+  footer: Footer
+  offcanvas: Offcanvas
+particles:
+  menu:
+    menu-7160: Menu
+  position:
+    position-breadcrumbs: Breadcrumbs
+    position-sidebar: Sidebar
+    position-right: Right
+    position-sidebar2: Sidebar2
+    position-right2: Right2
+    position-footer: Footer
+  messages:
+    system-messages-6917: 'System Messages'
+  content:
+    system-content-9154: 'Page Content'
+  social:
+    social-5876: Social
+    social-8937: Social
+  copyright:
+    copyright-9695: Copyright
+  spacer:
+    spacer-1962: Spacer
+  branding:
+    branding-6597: Branding
+  mobile-menu:
+    mobile-menu-8537: Mobile-menu
+inherit: {  }

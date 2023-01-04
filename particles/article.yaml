@@ -1,0 +1,61 @@
+name: Custom Article
+description: Create your custom article.
+type: particle
+
+configuration:
+  caching:
+    type: static
+
+form:
+  fields:
+    enabled:
+      type: input.checkbox
+      label: Enabled
+      description: Globally enable Content Tabs particle.
+      default: true
+
+    class:
+      type: input.selectize
+      label: CSS Classes
+      description: CSS class name for the particle.
+
+    title:
+      type: input.text
+      label: Choose the title for your article
+      description: Customize the section title text.
+      placeholder: Enter title
+
+    items:
+      type: collection.list
+      array: true
+      label: Content Tabs Items
+      description: Content Tabs item to display.
+      value: title
+      ajax: true
+
+      fields:
+        .title:
+          type: input.text
+          label: Title for article
+          description: Enter the title
+
+        .description:
+          type: textarea.textarea
+          label: Description for article
+          description: Enter the description
+          placeholder: Enter the description for article
+
+        .imageSelection:
+          type: input.imagepicker
+          label: image for the article
+          description: Select the image.
+
+        .btnTxt:
+          type: input.text
+          label: Title for article
+          description: Enter the title
+
+        .link:
+          type: input.text
+          label: link for the article
+          description: button redirecting link

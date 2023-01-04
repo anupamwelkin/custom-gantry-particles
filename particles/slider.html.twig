@@ -1,0 +1,41 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+<div class="{{ particle.css.class|e }}">
+    <div align="center">
+     {% if particle.title %}<h2 class="g-title">{{ particle.title|raw }}</h2>{% endif %}
+        
+        <div class="slideshow-container">
+  
+        {% for item in particle.items %}
+        <div class="mySlides fade">
+          <div>{{item.title}}</div>
+          <img src="{{ url(item.imageSelection) }}" class="slider"  alt="image" style="width:100%">
+          <div class="text">{{item.content}}</div>
+        </div>
+
+      {% endfor %}
+      <div style="text-align:center">
+        {% for item in particle.items %}
+          <span class="dot"></span> 
+     {% endfor %}
+     </div>
+
+
+     <div class="js-user-rating"
+    data-timer="{{ particle.timer }}"
+    
+>
+ 
+</div>
+
+</div>
+{% endblock %}
+
+{% block javascript_footer %}
+    {% do gantry.load('jquery') %}
+    <script src="{{ url('gantry-theme://js/customSlider.js') }}">
+    </script>
+ 
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends '@nucleus/partials/particle.html.twig' %}
+
+{% block particle %}
+ {% if particle.title %}<h2 class="g-title">{{ particle.title|raw }}</h2>{% endif %}
+<div class="videoBg">
+{#<video autoplay muted loop id="myVideo">#}
+  {#<source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">#}
+<iframe width="420" height="315" id="myVideo"
+src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+  {#Your browser does not support HTML5 video.#}
+{#</video>#}
+
+{#<div class="content">#}
+  {#<h1>{{particle.heading}}</h1>#}
+{#  <p>{{particle.description}}</p>#}
+{#  <button id="myBtn" onclick="myFunction()">Pause</button>#}
+{#</div>#}
+</div>
+
+{% endblock %}
+{% block javascript_footer %}
+    {% do gantry.load('jquery') %}
+    <script src="{{ url('gantry-theme://js/backgroundVideo.js') }}">
+    </script>
+ 
+
+{% endblock %}
